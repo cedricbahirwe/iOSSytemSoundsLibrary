@@ -18,6 +18,7 @@ struct ContentView: View {
                     Text(title)
                         .font(.system(size: 20))
                         .fontWeight(.medium)
+                        .padding(.vertical, 5)
                         .onTapGesture {
                             play(at: audioFile)
                         }
@@ -48,9 +49,7 @@ struct ContentView: View {
                 if element.hasSuffix("caf")  {
                     let prefix = "file:///System/Library/Audio/UISounds/"
                     let link = NSURL(string: "\(prefix+element)")!
-                    print(link)
                     audioFileList.append(link)
-                    
                 }
             }
             // Since we are sure that every NSURl which is added to the list
