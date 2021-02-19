@@ -1,14 +1,14 @@
 iOSSystemSoundsLibrary
 ======================
 
-## Many Thanks to: https://github.com/TUNER88 who made first sample app back in 2013 with objective c 
+## Many Thanks to: [TUNER88](https://github.com/TUNER88) who made first sample app back in 2013 with objective c 
 ## This is completety made out of swift and swiftui 8 years later for fun 😊
 ### Note that the README.md file has kept the original description with few minor changes (swift 5.3, ios version)
 
 - List of all system sounds used in iOS
 - Run project on your iOS device to test all available system sounds
 - iOS Simulator does NOT play system sounds
-- [TUNER88](https://github.com/TUNER88)
+- [ScreenShot](#screenshot)
 
 ##How to use in your project:
 - add ``AudioToolbox.framework`` to your project
@@ -777,4 +777,5 @@ List of all system audio files in iOS 14.4
 
 Screenshot
 -------------------------
-![screenshot](https://raw.github.com/cedricbahirwe/iOSSytemSoundLibrary/readme/img/screenshot.png)
+![screenshot]<img alt="iPhone Layout"  src="https://github.com/cedricbahirwe/iOSSytemSoundsLibrary/blob/master/iPhone.png">
+
