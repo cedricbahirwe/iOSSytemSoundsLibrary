@@ -43,11 +43,12 @@ struct ContentView: View {
     /// Fetch and Load audio file find in the specified directory
     private func loadAudioFileList() {
         let fileManager = FileManager.default
+        let prefix = "file:///System/Library/Audio/UISounds/" // Where system sounds are located
+
         if let enumerator:FileManager.DirectoryEnumerator = fileManager.enumerator(atPath: "/System/Library/Audio/UISounds") {
             while let element = enumerator.nextObject() as? String {
                 // Check if  element has caf (Core audio file) extension
                 if element.hasSuffix("caf")  {
-                    let prefix = "file:///System/Library/Audio/UISounds/"
                     let link = NSURL(string: "\(prefix+element)")!
                     audioFileList.append(link)
                 }
