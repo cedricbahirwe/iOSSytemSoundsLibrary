@@ -1,28 +1,37 @@
 iOSSystemSoundsLibrary
 ======================
 
-## Many Thanks to: https://github.com/TUNER88 who made the first concept back in 2013 with objective c 
+## Many Thanks to: https://github.com/TUNER88 who made first sample app back in 2013 with objective c 
 ## This is completety made out of swift and swiftui 8 years later for fun 😊
-### Note that the README.md kept the original description with few changes
+### Note that the README.md file has kept the original description with few minor changes (swift 5.3, ios version)
+
 - List of all system sounds used in iOS
 - Run project on your iOS device to test all available system sounds
 - iOS Simulator does NOT play system sounds
-- [Screenshot](#screenshot)
+- [TUNER88](https://github.com/TUNER88)
 
 ##How to use in your project:
 - add ``AudioToolbox.framework`` to your project
 - import ``#import <AudioToolbox/AudioToolbox.h>``
 
-####Play sound using SystemSoundID
+####Play sound using SystemSoundID - objective-c & swift 5.3
 ```objective-c
 AudioServicesPlaySystemSound (1003); // SMSReceived (see SystemSoundID below)
 ```
 
-####Play sound using file url
+####Play sound using file url - objective-c
 ```objective-c
 NSURL *fileURL = [NSURL URLWithString:@"/System/Library/Audio/UISounds/ReceivedMessage.caf"]; // see list below
 SystemSoundID soundID;
 AudioServicesCreateSystemSoundID((__bridge_retained CFURLRef)fileURL,&soundID);
+AudioServicesPlaySystemSound(soundID);
+```
+
+####Play sound using file url - swift 5.3
+```swift 5.3
+let fileURL = NSURL(string: "/System/Library/Audio/UISounds/ReceivedMessage.caf")!; // see list below
+SystemSoundID soundID;
+AudioServicesCreateSystemSoundID(fileURL,&soundID);
 AudioServicesPlaySystemSound(soundID);
 ```
 
