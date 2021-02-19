@@ -777,5 +777,5 @@ List of all system audio files in iOS 14.4
 
 Screenshot
 -------------------------
-![screenshot]<img alt="iPhone Layout"  src="https://github.com/cedricbahirwe/iOSSytemSoundsLibrary/blob/master/iPhone.png">
+<img alt="iPhone Layout"  src="https://github.com/cedricbahirwe/iOSSytemSoundsLibrary/blob/master/iPhone.png">
 
