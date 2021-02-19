@@ -1,7 +1,7 @@
 iOSSystemSoundsLibrary
 ======================
 
-## Credit to: https://github.com/TUNER88 who made the first concept back in 2013 with objective c 
+## Many Thanks to: https://github.com/TUNER88 who made the first concept back in 2013 with objective c 
 ## This is completety made out of swift and swiftui 8 years later for fun 😊
 ### Note that the README.md kept the original description with few changes
 - List of all system sounds used in iOS
